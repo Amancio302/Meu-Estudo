@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="69" />
+                                                <entry key="scalingPercent" value="102" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -34,6 +34,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="backgroundImage" value="C:\Users\VictorGustavo\Desktop\Arquivos\Projetos\Cofrinho\vazio.png" />
                                       <entry key="foregroundImage" value="C:\Users\VictorGustavo\Desktop\Arquivos\Projetos\Meu Estudo\logo2.png" />
                                       <entry key="legacyIconShape" value="NONE" />
                                       <entry key="webIconShape" value="NONE" />
