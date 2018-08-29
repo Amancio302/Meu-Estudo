@@ -11,7 +11,7 @@ public class CriaBanco extends SQLiteOpenHelper {
 
     public static final String NOME_BANCO = "meuestudo.db";
     public static final String Materia = "Materia";
-    public static final String idMateria = "_idMateria";
+    public static final String idMateria = "idMateria";
     public static final String nomeMateria = "nomeMateria";
     public static final String meta = "meta";
     public static final String Nota = "Nota";
@@ -46,7 +46,7 @@ public class CriaBanco extends SQLiteOpenHelper {
                 " key(" + Materia_idMateria + ") references " + Materia + "( " + idMateria + " ) on update cascade)";
         sqLiteDatabase.execSQL(sql);
         sql = "CREATE TABLE " + Alarme + "(" + idAlarme + " integer primary key autoincrement, " + dataAlarme + " date, " + toque +
-                " text, foreign key( " + Evento_idEvento + " ) references " + Evento + "( " + idEvento + " ) on update cascade)";
+                " text, " + Evento_idEvento + " integer, foreign key( " + Evento_idEvento + " ) references " + Evento + "( " + idEvento + " ) on update cascade)";
         sqLiteDatabase.execSQL(sql);
         sql = "INSERT INTO Materia (idMateria, nomeMateria, meta) VALUES (0, 'Sem matéria', 0)";
         sqLiteDatabase.execSQL(sql);
